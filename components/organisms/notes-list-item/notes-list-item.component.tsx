@@ -26,7 +26,7 @@ export const NotesListItem = ({ note, isPressed }: NotesListItemProps) => {
       style={{
         transform: [{ scale: isPressed ? 0.98 : 1 }],
       }}
-      bg="white"
+      bgColor={"#FAF2E8"}
       borderRadius="2xl"
       px={3}
       py={3}
@@ -41,8 +41,8 @@ export const NotesListItem = ({ note, isPressed }: NotesListItemProps) => {
       <Text fontSize="sm" fontWeight="light">
         {note.content[0]}
       </Text>
-      <Box display="flex" flexDir="row" justifyContent="space-between">
-        <Text>General</Text>
+      <Box mt={1} display="flex" flexDir="row" justifyContent="space-between">
+        <Heading size="xs">General</Heading>
         <Box>
           <Text>{displayDate}</Text>
         </Box>
