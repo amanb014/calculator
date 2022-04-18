@@ -1,10 +1,11 @@
-import { Box, Text } from "native-base";
 import React from "react";
+import { NotesListComponent } from "../../organisms/notes-list";
+import { ScrollBackground } from "../../atoms/scroll-background.component";
 
 export const NotesListScreen = () => {
   return (
-    <Box>
-      <Text>notes-list</Text>
-    </Box>
+    <ScrollBackground>
+      <NotesListComponent />
+    </ScrollBackground>
   );
 };
